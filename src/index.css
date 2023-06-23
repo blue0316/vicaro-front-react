@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import './styles/utility-patterns.css';
+@import './styles/range-slider.css';
+@import './styles/toggle-switch.css';
+@import './styles/flatpickr.css';
+@import './styles/theme.css';
+
+@import 'tailwindcss/utilities';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.button-nowrap span {
+  white-space: nowrap;
+}
+
+.select-box > div{
+  width: 100%;
+}
+
+.bg-prime-gradient {
+  background: rgb(255,229,195);
+  background: linear-gradient(170deg, rgba(255,229,195,1) 0%, rgba(255,134,153,1) 30%, rgba(255,85,113,1) 70%, rgba(170,4,99,1) 100%);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.dropdown-filter1 {
+  display: none;
+}
+
+button span {
+  width: 100%;
+  justify-content: center;
+}
+
+.dropdown-filter li, .dropdown-filter1 li, .dropdown-filter2 li {
+  text-align: left;
+}
+
+.dropdown-filter li[aria-selected="true"], .dropdown-filter1 [aria-selected="true"], .dropdown-filter2 [aria-selected="true"] {
+  background-color: rgba(255,134,153,1);
+}
+
+.input-field input {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  border-color: #E2E8F0 !important;
+}
+
+#search-modal {
+  display: none !important;
+}
+
+#search-modal.enter-done, #search-modal.enter-active {
+  display: flex !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown-filter1 {
+    display: block;
+  }
+  .dropdown-filter2 {
+    display: none !important;
+  }
+}
